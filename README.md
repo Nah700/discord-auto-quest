@@ -66,12 +66,6 @@ We are **not responsible** for any consequences caused by misuse.
 
 ---
 
-## ✅ Bonus Tip
-
-If you have multiple quests, you can tweak the script to loop through all of them instead of stopping at the first one. This makes batch quest spoofing possible.
-
----
-
 ## 🧠 Contributing
 
 Suggestions, improvements, and support for additional quest types are welcome!  
