@@ -24,10 +24,10 @@ if (quest.config?.taskConfigV2?.tasks) {
     taskName = ["WATCH_VIDEO", "PLAY_ON_DESKTOP", "STREAM_ON_DESKTOP", "PLAY_ACTIVITY"]
         .find(x => quest.config.taskConfigV2.tasks[x] != null);
 } else {
-    console.warn("Cette quête n’a pas de taskConfigV2 — elle utilise probablement un ancien format.");
+    console.warn("This quest doesn't have taskConfigV2 — script need to be update");
 }
 if (!taskName) {
-    console.log("Type de tâche non reconnu ou non supporté.");
+    console.log("Unknown task type.");
     fn()
 }
 
