@@ -21,7 +21,7 @@ if(!quest) {
 	const applicationName = quest.config.application.name
 let taskName = null;
 if (quest.config?.taskConfigV2?.tasks) {
-    taskName = ["WATCH_VIDEO", "PLAY_ON_DESKTOP", "STREAM_ON_DESKTOP", "PLAY_ACTIVITY"]
+    taskName = ["WATCH_VIDEO", "PLAY_ON_DESKTOP", "STREAM_ON_DESKTOP", "PLAY_ACTIVITY", "WATCH_VIDEO_ON_MOBILE"]
         .find(x => quest.config.taskConfigV2.tasks[x] != null);
 } else {
     console.warn("This quest doesn't have taskConfigV2 — script need to be update");
@@ -34,7 +34,7 @@ if (!taskName) {
 	const secondsNeeded = quest.config.taskConfigV2.tasks[taskName].target
 	let secondsDone = quest.userStatus?.progress?.[taskName]?.value ?? 0
 
-	if(taskName === "WATCH_VIDEO") {
+	if(taskName === "WATCH_VIDEO" || taskName === "WATCH_VIDEO_ON_MOBILE") {
 		const maxFuture = 10, speed = 7, interval = 1
 		const enrolledAt = new Date(quest.userStatus.enrolledAt).getTime()
 		let fn = async () => {			
