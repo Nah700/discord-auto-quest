@@ -1,6 +1,6 @@
 # Discord Quest Spoofer
 
-This JavaScript script allows you to **simulate progress in Discord Quests** by injecting code into the developer console of Discord (browser or desktop app). It supports quests like `WATCH_VIDEO`, `PLAY_ON_DESKTOP`, `STREAM_ON_DESKTOP`, and `PLAY_ACTIVITY`.
+This JavaScript script allows you to **simulate progress in Discord Quests** by injecting code into the developer console of Discord (browser or desktop app). It supports quests like `WATCH_VIDEO`, `WATCH_VIDEO_ON_MOBILE`, `PLAY_ON_DESKTOP`, `STREAM_ON_DESKTOP`, and `PLAY_ACTIVITY`.
 
 > ⚠️ **Use at your own risk. This script violates Discord's Terms of Service.**  
 > Using this tool may result in account warnings, revoked rewards, or permanent bans.
@@ -40,6 +40,7 @@ This JavaScript script allows you to **simulate progress in Discord Quests** by 
 | Task Name           | Description                                              |
 |---------------------|----------------------------------------------------------|
 | `WATCH_VIDEO`       | Fakes watching a promotional video                       |
+| `WATCH_VIDEO_ON_MOB`| Fakes watching a promotional video on mobile             |
 | `PLAY_ON_DESKTOP`   | Simulates launching a desktop app                        |
 | `STREAM_ON_DESKTOP` | Fakes streaming activity to a voice channel              |
 | `PLAY_ACTIVITY`     | Fakes activity inside a voice channel                    |
